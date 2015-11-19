@@ -1,0 +1,104 @@
+/*
+
+CSS - Cascading Style Sheet
+
+default text size is 16px - set by web browser
+
+green - 157C5F
+Black - 000000
+White - F4F6F6
+
+Selectors are used to target elements onthe page, you can be very specific about what is targeted.
+
+An class is targeted using a '.' you can have multiple classes classes on an element
+An ID is targeted using a '#'
+
+Examples:
+
+header {} - this would target the header element
+.header-inner {} - this would target and element with a class of .header-inner, the element type does not matter if using classes.
+#logo - this would target an element with an ID of logo.
+
+You target nested elements to be more specific with your styles.
+
+Example:
+
+header a {} - would target all 'a' elements inside the 'header' element
+
+*/
+
+/*Header*/
+header {
+  margin-bottom: 20px;
+}
+
+.header-inner {
+  height: 150px;
+  padding: 20px;
+  border: 1px solid #ACB9AC;
+  border-radius: 4px;
+  background-color: #000000;
+}
+
+.brand {
+  font-size: 32px;
+  color: #F4F6F6;
+  padding-top: 25px;
+  display: block;
+}
+
+.brand:hover,
+.brand:focus {
+  color: #F4F6F6;
+}
+
+
+/*Main*/
+main {
+  margin-bottom: 20px;
+}
+
+.main-inner {
+  border: 1px solid #e7e7e7;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+}
+
+/*footer*/
+footer {
+  margin-bottom: 20px;
+}
+.footer-inner {
+  padding: 20px;
+  border: 1px solid #ACB9AC;
+  border-radius: 4px;
+  background-color: #157C5F;
+}
+
+/* Targets A tags inside footer */
+footer a {
+  color: #F4F6F6;
+}
+
+footer a:hover,
+footer a:focus {
+  color: #F4F6F6;
+}
+
+/*Base*/
+
+hr {
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 0;
+  padding-bottom: 40px;
+  margin-bottom: 40px;
+}
+ 
+.image-top-right {
+  display: inline-block;
+  width: 250px;
+  height: auto;
+  float: right;
+  margin-left: 20px;
+  border: 2px solid black;
+}
